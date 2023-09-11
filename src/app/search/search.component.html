@@ -1,0 +1,14 @@
+<div>
+  <div [ngClass]="{backgroundcolor : searchValue !== '' }" class="d-flex align-items-center justify-content-center p-2">
+    <!-- <input
+      type="search "
+      class="form-control w-50"
+      placeholder="Search for items"
+      (input)="ChangeSearchValue($event)"
+    /> -->
+    &nbsp;
+    &nbsp;
+    <input  type="search " class="form-control w-50" placeholder="Search for items" [(ngModel)]="searchValue">
+    <span *ngIf="searchValue !== '' ">You searched for "{{ searchValue }}"</span>
+  </div>
+</div>

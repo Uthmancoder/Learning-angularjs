@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'FirstClass';
+  title = 'My first angular class';
+  message = "Angular is one of the best javascript frameworks"
 }

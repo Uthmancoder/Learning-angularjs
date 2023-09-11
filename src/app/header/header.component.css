@@ -1,0 +1,10 @@
+.image{
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+}
+h3{
+  font-size: 50px;
+  margin-left: 40px;
+  color: burlywood;
+}

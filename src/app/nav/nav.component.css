@@ -1,0 +1,19 @@
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  height: 80px;
+  background-color: #FAD7A0;
+  color: black;
+}
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links li{
+  padding: 20px;
+ list-style-type: none;
+}
