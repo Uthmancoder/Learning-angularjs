@@ -10,3 +10,6 @@
     <li>Products</li>
   </ul>
 </div>
+<input type="text" #myVariable (keyup)="0">
+<button (click)="sayHello(myVariable)">hello</button>
+<p>{{ myVariable.value }}</p>

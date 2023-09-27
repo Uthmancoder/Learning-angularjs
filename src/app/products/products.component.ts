@@ -41,8 +41,8 @@ onfliteredProductChange(selectedProductType : string){
 
 SearchedText : string = "";
 
-onsearchTextEnter(searchedValue : string){
-  this.SearchedText =  searchedValue;
-  console.log(this.SearchedText)
+onsearchTextEnter(SearchedValue : string){
+  this.SearchedText =  SearchedValue;
+  // console.log(this.SearchedText)
 }
 }

@@ -13,11 +13,15 @@ export class SearchComponent {
   //    this.searchValue = (<HTMLInputElement>eventData.target).value
   // }
 
+  // creating a property
   enteredSarchValue : string = "";
+
+  // creating an output decorator
   @Output()
   SearchedValue : EventEmitter<string> = new EventEmitter<string>();
 
   onSearchProduct(){
     this.SearchedValue.emit(this.enteredSarchValue)
+    // console.log(this.enteredSarchValue)
   }
 }

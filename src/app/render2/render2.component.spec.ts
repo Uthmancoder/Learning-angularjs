@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavComponent } from './nav.component';
+import { Render2Component } from './render2.component';
 
-describe('NavComponent', () => {
-  let component: NavComponent;
-  let fixture: ComponentFixture<NavComponent>;
+describe('Render2Component', () => {
+  let component: Render2Component;
+  let fixture: ComponentFixture<Render2Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NavComponent]
+      declarations: [Render2Component]
     });
-    fixture = TestBed.createComponent(NavComponent);
+    fixture = TestBed.createComponent(Render2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -18,6 +18,4 @@ describe('NavComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-
 });

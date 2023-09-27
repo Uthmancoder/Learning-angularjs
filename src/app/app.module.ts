@@ -9,7 +9,19 @@ import { NotificationComponent } from './notification/notification.component';
 import { SearchComponent } from './search/search.component';
 import {FormsModule} from "@angular/forms";
 import { ProductsComponent } from './products/products.component';
-import { FilterComponent } from './filter/filter.component'
+import { FilterComponent } from './filter/filter.component';
+import { CustomerListsComponent } from './customer-lists/customer-lists.component';
+import { ViewChildComponent } from './view-child/view-child.component';
+import { ChiltToParentComponent } from './chilt-to-parent/chilt-to-parent.component';
+import { NgcontentComponent } from './ngcontent/ngcontent.component';
+import { ContentProductsComponent } from './content-products/content-products.component';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { LifehooksdemoComponent } from './lifehooksdemo/lifehooksdemo.component';
+import { ContentChildComponent } from './content-child/content-child.component';
+import { ContentChildDemoComponent } from './content-child-demo/content-child-demo.component';
+import { CustomAttributeComponent } from './custom-attribute/custom-attribute.component';
+import { SetbackgroundDirective} from "./CustomDirectives/setbackgrounddirective";
+import { Render2Component } from './render2/render2.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +32,19 @@ import { FilterComponent } from './filter/filter.component'
     NotificationComponent,
     SearchComponent,
     ProductsComponent,
-    FilterComponent
+    FilterComponent,
+    CustomerListsComponent,
+    ViewChildComponent,
+    ChiltToParentComponent,
+    NgcontentComponent,
+    ContentProductsComponent,
+    LifecycleHooksComponent,
+    LifehooksdemoComponent,
+    ContentChildComponent,
+    ContentChildDemoComponent,
+    CustomAttributeComponent,
+    SetbackgroundDirective,
+    Render2Component
   ],
   imports: [
     BrowserModule,

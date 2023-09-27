@@ -1,0 +1,11 @@
+<div class="d-flex align-items-center m-5">
+   <label for="Dob">Dob : </label>
+   <input type="date" name="Dob" id="Dob" #dobInput  (blur)="caculateAge()">
+</div>
+
+<div class="mx-5">
+  <label for="age">Age : </label>
+ <input type="text" name="age" id="age"  #ageInput>
+ <app-chilt-to-parent></app-chilt-to-parent>
+ {{ demoComp.sayHello() }}
+</div>

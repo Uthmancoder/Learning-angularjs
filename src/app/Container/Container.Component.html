@@ -4,5 +4,12 @@
     <app-header></app-header>
     <app-notification></app-notification>
     <app-products></app-products>
+    <app-customer-lists #customers></app-customer-lists>
+    <p *ngIf="customers.selectedCustomer.name">You selected {{customers.selectedCustomer.name}}</p>
+    <app-view-child></app-view-child>
+    <app-ngcontent></app-ngcontent>
+    <app-lifecycle-hooks></app-lifecycle-hooks>
+    <app-content-child></app-content-child>
+    <app-custom-attribute></app-custom-attribute>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: '.app-nav',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
   siteName : string = "TimeShoppy"
+
+  sayHello (InputEl : HTMLInputElement){
+    alert("hello  " + InputEl.value)
+  }
 }
+
+
+

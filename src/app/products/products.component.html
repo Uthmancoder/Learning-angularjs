@@ -1,6 +1,6 @@
 <app-search
-(SearchedValue)="onsearchTextEnter($event)"
-/>
+  (SearchedValue)="onsearchTextEnter($event)"
+></app-search>
 <app-filter
   [all]="getTotalProducts()"
   [phones]="getTotalPhones()"
@@ -11,7 +11,8 @@
 ></app-filter>
 
 <ng-container *ngFor="let p of products">
-  <div  *ngIf="productSelected === 'all' || productSelected === p.category">
+  <!-- productSelected === 'all' || productSelected === p.category -->
+  <div  *ngIf="SearchedText === '' || p.name.toLowerCase().includes(SearchedText)">
     <div
       [ngStyle]="{
         backgroundColor: p.availability === 'Available' ? '#D5F5E3' : '#FADBDB'
