@@ -1,0 +1,27 @@
+<div class="d-flex align-items-center justfy-content-between w-100 mx-auto">
+  <div class="d-flex align-items-center mx-4">
+    <input  type="radio" name="select" id="1" value="all" [(ngModel)]="selectedProductType"
+     (change)="onSelectorChange()">
+    <h5 class="mx-1">{{'Total Products('+all+')'}}</h5>
+  </div>
+   <div class="d-flex align-items-center mx-4" >
+     <input  type="radio" name="select" id="1"  value="phones" [(ngModel)]="selectedProductType"
+     (change)="onSelectorChange()">
+     <h5 class="mx-1">{{'Phones  ('+phones+')' }}</h5>
+   </div>
+   <div  class="d-flex align-items-center mx-4">
+     <input  type="radio" name="select" id="2"  value="Gadgets" [(ngModel)]="selectedProductType"
+     (change)="onSelectorChange()">
+     <h5 class="mx-1">{{'Gadgets  ('+Gadgets+')'}}</h5>
+   </div>
+   <div  class="d-flex align-items-center mx-4">
+     <input  type="radio" name="select" id="3"  value="Electronics" [(ngModel)]="selectedProductType"
+     (change)="onSelectorChange()">
+     <h5 class="mx-1">{{'Electronics  ('+Electronics+')'}}</h5>
+   </div>
+   <div  class="d-flex align-items-center mx-4">
+     <input  type="radio" name="select" id="4"  value="Watch" [(ngModel)]="selectedProductType"
+     (change)="onSelectorChange()">
+     <h5 class="mx-1">{{'Watch  ('+Watch+')'}}</h5>
+   </div>
+</div>

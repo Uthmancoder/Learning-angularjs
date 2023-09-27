@@ -1,5 +1,5 @@
 <div>
-  <div [ngClass]="{backgroundcolor : searchValue !== '' }" class="d-flex align-items-center justify-content-center p-2">
+  <div [ngClass]="{backgroundcolor : enteredSarchValue !== '' }" class="d-flex align-items-center justify-content-center p-2">
     <!-- <input
       type="search "
       class="form-control w-50"
@@ -8,7 +8,6 @@
     /> -->
     &nbsp;
     &nbsp;
-    <input  type="search " class="form-control w-50" placeholder="Search for items" [(ngModel)]="searchValue">
-    <span *ngIf="searchValue !== '' ">You searched for "{{ searchValue }}"</span>
+    <input  type="search " class="form-control w-50" placeholder="Search for items" [(ngModel)]="enteredSarchValue" (input)="onSearchProduct">
   </div>
 </div>
