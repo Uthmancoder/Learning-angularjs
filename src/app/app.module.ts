@@ -21,7 +21,9 @@ import { ContentChildComponent } from './content-child/content-child.component';
 import { ContentChildDemoComponent } from './content-child-demo/content-child-demo.component';
 import { CustomAttributeComponent } from './custom-attribute/custom-attribute.component';
 import { SetbackgroundDirective} from "./CustomDirectives/setbackgrounddirective";
-import { Render2Component } from './render2/render2.component'
+import { Render2Component } from './render2/render2.component';
+import { HoverDirective } from './hover.directive';
+import { BetterhighlightDirective } from './betterhighlight.directive'
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { Render2Component } from './render2/render2.component'
     ContentChildDemoComponent,
     CustomAttributeComponent,
     SetbackgroundDirective,
-    Render2Component
+    Render2Component,
+    HoverDirective,
+    BetterhighlightDirective
   ],
   imports: [
     BrowserModule,
