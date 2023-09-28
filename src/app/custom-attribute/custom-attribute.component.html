@@ -3,5 +3,7 @@
   <h2 class="fs-2 p-3 " app-render2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quasi odio est.</h2>
 
    <h2 class="p-4 bg-secondary text-light" appHover>Here is the HostListner Directive </h2>
-   <h2 class="p-4 container" appBetterhighlight>Here is the HostBinding Directive </h2>
+   <!-- i want to bind the defaultColor property to this html element for changing the background color from the view template  -->
+   <!-- and also i was using a squared brackkets because i was using property binding  and assigning a typescript expression -->
+   <h2 class="p-4 container" [appBetterhighlight]="'purple'"    [HoveredColor]="'tomato'" [title]="'this is the better highlight title from the hostListner'">Here is the HostBinding Directive </h2>
 </div>
