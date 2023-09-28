@@ -23,7 +23,8 @@ import { CustomAttributeComponent } from './custom-attribute/custom-attribute.co
 import { SetbackgroundDirective} from "./CustomDirectives/setbackgrounddirective";
 import { Render2Component } from './render2/render2.component';
 import { HoverDirective } from './hover.directive';
-import { BetterhighlightDirective } from './betterhighlight.directive'
+import { BetterhighlightDirective } from './betterhighlight.directive';
+import { ClassDirective } from './class.directive'
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { BetterhighlightDirective } from './betterhighlight.directive'
     SetbackgroundDirective,
     Render2Component,
     HoverDirective,
-    BetterhighlightDirective
+    BetterhighlightDirective,
+    ClassDirective
   ],
   imports: [
     BrowserModule,

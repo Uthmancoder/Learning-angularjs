@@ -3,3 +3,17 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+/* if you are to use - inbbetweena clasname in your viewtemplate you have to wrap them inbetween quotes */
+.change-font{
+    font-size: 15px;
+    padding: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.changeFont{
+    font-size: 20px;
+    color: goldenrod;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   word-spacing: 2px;
+}
+

@@ -6,4 +6,10 @@
    <!-- i want to bind the defaultColor property to this html element for changing the background color from the view template  -->
    <!-- and also i was using a squared brackkets because i was using property binding  and assigning a typescript expression -->
    <h2 class="p-4 container" [appBetterhighlight]="'purple'"    [HoveredColor]="'tomato'" [title]="'this is the better highlight title from the hostListner'">Here is the HostBinding Directive </h2>
+
+   <!-- using the app class selector on an html element -->
+   <!-- this display property is a property but used as a method in the appclass directive the app class selector used here is to tell angular where to find this diaplay property -->
+   <div [appClass]="{changeFont : true, 'change-font' : true}">
+      <h3>This Html element consent to understand how to create custom ngclass directive in angular </h3>
+   </div>
 </div>
