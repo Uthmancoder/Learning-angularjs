@@ -15,7 +15,7 @@ export class ConditionaldirectiveComponent {
    mostLikedVideo = this.getLikedVideos();
 
    getLikedVideos(){
-    // expandinding the videos indide of the videocopy
+    // expandinding the videos inside of the videocopy
     let videoCopy =  [...this.Videos];
 // sorting the array in descending order
   return  videoCopy.sort((current, next ) => next.likes - current.likes)[0];
