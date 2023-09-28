@@ -24,7 +24,9 @@ import { SetbackgroundDirective} from "./CustomDirectives/setbackgrounddirective
 import { Render2Component } from './render2/render2.component';
 import { HoverDirective } from './hover.directive';
 import { BetterhighlightDirective } from './betterhighlight.directive';
-import { ClassDirective } from './class.directive'
+import { ClassDirective } from './class.directive';
+import { ConditionaldirectiveComponent } from './conditionaldirective/conditionaldirective.component';
+import { HighlightDirective } from './highlight.directive'
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { ClassDirective } from './class.directive'
     Render2Component,
     HoverDirective,
     BetterhighlightDirective,
-    ClassDirective
+    ClassDirective,
+    ConditionaldirectiveComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
