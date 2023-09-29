@@ -1,3 +1,6 @@
+<div appStyle [setStyle]="{backgroundColor : 'hotpink', color : 'blueviolet', padding : '20px' }">
+  <h3>This is a demo component used to understand how to create custom ngstyle directive in angular</h3>
+</div>
 <div class="container">
   <div
     class="row mx-auto w-100 mx-auto d-flex align-items-center justify-content-center"
@@ -6,6 +9,7 @@
       class="col-12 rounded-2 shadow border col-sm-6 col-md-3 mx-2 p-2"
       *ngFor="let video of Videos"
     >
+    <!-- thr appHighlight directive is only used to add the class conditionally to the div element is the condition return's true  -->
       <div class=""  [appHighlight]="video.likes === mostLikedVideo.likes" >
         <img class="img-fluid h-75" src="{{ video.image }}" alt="" />
         <h4 class="text-center m-3">{{ video.title }}</h4>

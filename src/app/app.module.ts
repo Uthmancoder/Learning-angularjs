@@ -26,7 +26,8 @@ import { HoverDirective } from './hover.directive';
 import { BetterhighlightDirective } from './betterhighlight.directive';
 import { ClassDirective } from './class.directive';
 import { ConditionaldirectiveComponent } from './conditionaldirective/conditionaldirective.component';
-import { HighlightDirective } from './highlight.directive'
+import { HighlightDirective } from './highlight.directive';
+import { StyleDirective } from './style.directive'
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { HighlightDirective } from './highlight.directive'
     BetterhighlightDirective,
     ClassDirective,
     ConditionaldirectiveComponent,
-    HighlightDirective
+    HighlightDirective,
+    StyleDirective
   ],
   imports: [
     BrowserModule,
