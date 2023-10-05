@@ -1,5 +1,15 @@
-<div appStyle [setStyle]="{backgroundColor : 'hotpink', color : 'blueviolet', padding : '20px' }">
-  <h3>This is a demo component used to understand how to create custom ngstyle directive in angular</h3>
+<div
+  appStyle
+  [setStyle]="{
+    backgroundColor: 'hotpink',
+    color: 'blueviolet',
+    padding: '20px'
+  }"
+>
+  <h3>
+    This is a demo component used to understand how to create custom ngstyle
+    directive in angular
+  </h3>
 </div>
 <div class="container">
   <div
@@ -9,8 +19,8 @@
       class="col-12 rounded-2 shadow border col-sm-6 col-md-3 mx-2 p-2"
       *ngFor="let video of Videos"
     >
-    <!-- thr appHighlight directive is only used to add the class conditionally to the div element is the condition return's true  -->
-      <div class=""  [appHighlight]="video.likes === mostLikedVideo.likes" >
+      <!-- thr appHighlight directive is only used to add the class conditionally to the div element is the condition return's true  -->
+      <div class="" [appHighlight]="video.likes === mostLikedVideo.likes">
         <img class="img-fluid h-75" src="{{ video.image }}" alt="" />
         <h4 class="text-center m-3">{{ video.title }}</h4>
         <div class="d-flex align-items-center gap-3">
@@ -34,4 +44,18 @@
       </div>
     </div>
   </div>
+
+  <button (click)="ShowNotice()" class="btn btn-secondary my-4">
+    Show Notice
+  </button>
+  <div class="bg-warning p-3" *ngIf="display; else myVar">
+    <h3>Notice!!</h3>
+    <p class="text-gray fw-bold fs-5 text-start">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+      voluptatibus, quibusdam, quia, quae voluptatem voluptatum quos
+    </p>
+  </div>
+  <ng-template #myVar>
+    <p class="fs-5 fw-bold">This is the else block</p>
+  </ng-template>
 </div>

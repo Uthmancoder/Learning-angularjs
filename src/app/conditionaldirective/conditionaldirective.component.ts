@@ -20,4 +20,10 @@ export class ConditionaldirectiveComponent {
 // sorting the array in descending order
   return  videoCopy.sort((current, next ) => next.likes - current.likes)[0];
 }
+
+display: boolean = false
+
+ShowNotice = ()=>{
+  this.display = true;
+}
 }
