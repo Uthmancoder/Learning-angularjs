@@ -26,4 +26,6 @@ display: boolean = false
 ShowNotice = ()=>{
   this.display = true;
 }
+
+occupation : string = "Doctor"
 }

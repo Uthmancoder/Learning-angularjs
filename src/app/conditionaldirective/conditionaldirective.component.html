@@ -59,3 +59,22 @@
     <p class="fs-5 fw-bold">This is the else block</p>
   </ng-template>
 </div>
+
+<!-- Learning Ng-Switch -->
+
+<div class="text-start" [ngSwitch]="occupation">
+  <h2  class="text-start fw-bold my-2">Displaying paragraphs using ng-switch</h2>
+  <p class="bg-warning p-2" *ngSwitchCase="'Teacher'">
+    This paragraph would be displayed if the occupation selected is a Teacher
+  </p>
+  <p class="bg-primary p-2" *ngSwitchCase="'Lawyer'">
+    This paragraph would be displayed if the occupation selected is a Lawyer
+  </p>
+  <p class="bg-info p-2" *ngSwitchCase="'Stylist'">
+    This paragraph would be displayed if the occupation selected is a Stylist
+  </p>
+  <p class="bg-success p-2" *ngSwitchDefault>
+    This paragraph would be displayed if the occupation selected does not match
+    any Occupation  
+  </p>
+</div>
