@@ -30,6 +30,8 @@ import { HighlightDirective } from './highlight.directive';
 import { StyleDirective } from './style.directive';
 import { AngulaComponentComponent } from './angula-component/angula-component.component';
 import { JavascriptComponentComponent } from './javascript-component/javascript-component.component'
+import { EnrollService } from './Services/enroll.service';
+import { AdduserComponent } from './adduser/adduser.component';
 
 @NgModule({
   declarations: [
@@ -60,13 +62,14 @@ import { JavascriptComponentComponent } from './javascript-component/javascript-
     HighlightDirective,
     StyleDirective,
     AngulaComponentComponent,
-    JavascriptComponentComponent
+    JavascriptComponentComponent,
+    AdduserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EnrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,7 +5,9 @@
     <app-notification></app-notification>
     <app-products></app-products>
     <app-customer-lists #customers></app-customer-lists>
-    <p *ngIf="customers.selectedCustomer.name">You selected {{customers.selectedCustomer.name}}</p>
+    <p *ngIf="customers.selectedCustomer.name">
+      You selected {{ customers.selectedCustomer.name }}
+    </p>
     <app-view-child></app-view-child>
     <app-ngcontent></app-ngcontent>
     <app-lifecycle-hooks></app-lifecycle-hooks>
@@ -15,7 +17,8 @@
     <div class="d-flex align-items-center justify-conten-center w-50 mx-auto">
       <app-angula-component></app-angula-component>
       <app-javascript-component></app-javascript-component>
-
+    
     </div>
+    <app-adduser></app-adduser>
   </div>
 </div>

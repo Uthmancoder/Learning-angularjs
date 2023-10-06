@@ -1,0 +1,26 @@
+<div class="row container w-100">
+  <div class="bg-light shadow-md col-12 col-md-6 col-lg-7 p-5 my-5  mx-auto text-center">
+    <input
+      [(ngModel)]="name"
+      class="form-control mx-auto"
+      type="text"
+      placeholder="Username"
+      name="username"
+      id="1"
+    />
+    <select class="form-contrl w-100 p-2 my-3" [(ngModel)]="status" name="status" id="2">
+      <option value="active">Active</option>
+      <option value="inactive">InActive</option>
+    </select>
+    <button (click)="AddUser()" class="btn btn-success">Create User</button>
+
+    <!-- Display the list of users -->
+    <div *ngFor="let user of userService.users">
+      <div class="d-flex   justify-content-between bg-secondary my-2 text-light pt-2 px-3 align-items-center">
+        <h3>{{ user.id }}</h3>
+        <h3>{{ user.name }}</h3>
+        <p class="bg-dark p-1 px-2 rounded-2">{{ user.status }}</p>
+      </div>
+    </div>
+  </div>
+</div>
