@@ -1,0 +1,13 @@
+.course{
+  width: 300px;
+  height: 400px;
+  display: grid;
+  margin-left: 30px;
+  background-color: azure;
+  padding: 5px;
+  border-radius: 10px;
+}
+img{
+  height: 250px;
+  border-radius: 10px;
+}

@@ -27,7 +27,9 @@ import { BetterhighlightDirective } from './betterhighlight.directive';
 import { ClassDirective } from './class.directive';
 import { ConditionaldirectiveComponent } from './conditionaldirective/conditionaldirective.component';
 import { HighlightDirective } from './highlight.directive';
-import { StyleDirective } from './style.directive'
+import { StyleDirective } from './style.directive';
+import { AngulaComponentComponent } from './angula-component/angula-component.component';
+import { JavascriptComponentComponent } from './javascript-component/javascript-component.component'
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import { StyleDirective } from './style.directive'
     ClassDirective,
     ConditionaldirectiveComponent,
     HighlightDirective,
-    StyleDirective
+    StyleDirective,
+    AngulaComponentComponent,
+    JavascriptComponentComponent
   ],
   imports: [
     BrowserModule,
