@@ -32,6 +32,9 @@ import { AngulaComponentComponent } from './angula-component/angula-component.co
 import { JavascriptComponentComponent } from './javascript-component/javascript-component.component'
 import { EnrollService } from './Services/enroll.service';
 import { AdduserComponent } from './adduser/adduser.component';
+import { GettingUserComponent } from './getting-user/getting-user.component';
+import { AllusersComponent } from './allusers/allusers.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +66,10 @@ import { AdduserComponent } from './adduser/adduser.component';
     StyleDirective,
     AngulaComponentComponent,
     JavascriptComponentComponent,
-    AdduserComponent
+    AdduserComponent,
+    GettingUserComponent,
+    AllusersComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,

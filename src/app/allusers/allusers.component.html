@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="bg-transparent shadow-lg p-3">
+    <div
+      class="text-start d-flex align-items-center justify-content-between my-2 p-2"
+      *ngFor="let user of Users"
+    >
+      <div class="d-flex align-items-center justify-content-between w-75 shadow-lg p-3">
+        <div class="user-name">{{ user.name }}</div>
+        <div class="user-job">{{ user.Job }}</div>
+      </div>
+      <div class="p-2 shadow-lg mx-2 ">
+        <button (click)="showDetails(user)" class="btn btn-secondary">Details</button>
+      </div>
+    </div>
+  </div>
+</div>
