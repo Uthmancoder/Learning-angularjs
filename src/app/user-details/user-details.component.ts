@@ -13,10 +13,10 @@ export class UserDetailsComponent implements OnInit {
    user! : { name: string, Job: string, gender: string, age: number, avatar: string, country: string };
 
    ngOnInit() {
-    this.userService.onshowDetailsClicked.subscribe((data: { name: string, Job: string, gender: string, age: number, avatar: string, country: string }) => {
-      this.user = data;
+    this.userService.onshowDetailsClicked.subscribe((selectedUserData: { name: string, Job: string, gender: string, age: number, avatar: string, country: string }) => {
+      this.user = selectedUserData;
     });
   }
-  
+
   }
 

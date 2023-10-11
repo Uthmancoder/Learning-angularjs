@@ -8,10 +8,11 @@ export class newUserServices {
     { name: "Alfred", Job: "Teacher", gender: "male", age: 27, avatar: "https://datalab.com.ng/wp-content/uploads/2023/03/What-Does-a-Data-Scientist-Do-1024x598.png", country: "Ghana" },
   ];
 
-  // created a method 
+  // created a method
   onshowDetailsClicked = new EventEmitter<{ name: string, Job: string, gender: string, age: number, avatar: string, country: string }>();
 
-  // raising the method created 
+
+  // raising the method created
   showUserDetails(user:  { name: string, Job: string, gender: string, age: number, avatar: string, country: string }){
     this.onshowDetailsClicked.emit(user)
     // the method raised is the called on the alluser component
