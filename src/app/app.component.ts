@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggerService } from './Services/logger.service';
 import { UserService } from './Services/user.service';
-import { Observable, Observer, of, from} from 'rxjs';
+import { Observable, Observer, of, from } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -36,17 +36,40 @@ export class AppComponent implements OnInit {
   //   //     observer.next(5)
   // })
 
+  // creating an observable using the create oprator
+  myObservable = Observable.create((observer) => {
+    setTimeout(() => {
+      observer.next(1);
+    }, 1000);
+    setTimeout(() => {
+      observer.next(2);
+    }, 2000);
+    setTimeout(() => {
+      observer.next(3);
+    }, 3000);
+    setTimeout(() => {
+      observer.next(4);
+    }, 4000);
+    // Uncomment the following lines to handle errors
+    // setTimeout(() => {
+    //   observer.error(new Error("Something went wrong! Please try again later"));
+    // }, 5000);
+    setTimeout(() => {
+      observer.next(5);
+    }, 6000);
+    setTimeout(() => {
+      observer.complete();
+    }, 7000);
+  });
 
+  array1 = [1, 2, 3, 4, 5];
+  array2 = ['a', 'b', 'c', 'd', 'e'];
 
-  array1 = [1, 2, 3, 4, 5]
-  array2 = ['a', "b", "c", "d", "e"]
-
-  
-  // using of operator to create an observable  of operator emits the iterable as it is it does not emit the iterable one by one 
+  // using of operator to create an observable  of operator emits the iterable as it is it does not emit the iterable one by one
   // myObservable = of(this.array1, this.array2)
 
   // using from operator to perform an iterable
-  myObservable = from(this.array1) 
+  // myObservable = from(this.array1)
 
   ngOnInit() {
     this.myObservable.subscribe(
@@ -61,5 +84,4 @@ export class AppComponent implements OnInit {
       },
     );
   }
-  
 }
